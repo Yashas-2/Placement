@@ -30,8 +30,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'whitenoise.runserver_nostatic',
     'django.contrib.staticfiles',
-    'portal',
-    'users',
+    'placement_connect.portal',
+    'placement_connect.users',
 ]
 
 # 2. FIX: Configure Middleware for Static Files
