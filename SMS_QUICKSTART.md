@@ -15,9 +15,9 @@ pip install -r requirements.txt
 ### 3. Configure .env File (1 minute)
 Edit `.env` in your project root:
 ```env
-TWILIO_ACCOUNT_SID=YOUR_ACCOUNT_SID
-TWILIO_AUTH_TOKEN=YOUR_AUTH_TOKEN
-TWILIO_PHONE_NUMBER=YOUR_TWILIO_NUMBER
+TWILIO_ACCOUNT_SID=your_account_sid_here
+TWILIO_AUTH_TOKEN=your_auth_token_here
+TWILIO_PHONE_NUMBER=your_twilio_phone_number
 
 SMS_ENABLED=True
 SMS_DEFAULT_COUNTRY_CODE=+91
