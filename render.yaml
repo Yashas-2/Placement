@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: placement-portal
+    runtime: python3
+    buildCommand: "./build.sh"
+    startCommand: "gunicorn placement_connect.wsgi:application --bind 0.0.0.0:$PORT"
+    envVars:
+      - key: DATABASE_URL
+        generateValue: true
+      - key: SECRET_KEY
+        generateValue: true
+      - key: ALLOWED_HOSTS
+        value: your-app-name.onrender.com
+      - key: DEBUG
+        value: false
+      # Add your Twilio and other env vars here
+      - key: TWILIO_ACCOUNT_SID
+        sync: false
+      - key: TWILIO_AUTH_TOKEN
+        sync: false
+      - key: TWILIO_PHONE_NUMBER
+        sync: false
