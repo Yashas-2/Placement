@@ -67,4 +67,4 @@ Thumbs.db
 *.key
 *.crt
 secrets.json
-venv/
+env/
